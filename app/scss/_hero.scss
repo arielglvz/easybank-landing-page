@@ -26,9 +26,8 @@
       flex: 3;
       order: 2;
       height: 41rem;
-      background-image: none;
-      // background-image: url('/images/bg-intro-desktop.svg');
-      // background-position: left center; 
+      background-image: url('/images/bg-intro-desktop.svg');
+      background-position: left center; 
     }
 
     &::before,
