@@ -53,6 +53,7 @@ a:hover {
 // Buttons
 button,
 .button {
+  display: inline-block;
   padding: 0.875rem 2.1875rem;
   background: linear-gradient(to right, $limeGreen, $brightCyan);
   border-radius: 50px;
@@ -60,6 +61,14 @@ button,
   cursor: pointer;
   color: $white;
   font-weight: 400;
+  font-size: $font-sm;
+  color: $white;
+  transition: opacity 300ms ease-in-out;
+
+  
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 // Visibility
