@@ -30,11 +30,6 @@
       background-position: left center; 
     }
 
-    &::before,
-    &::after {
-
-    }
-
     &::before {
 
       @include breakpoint-up(medium) {
