@@ -1,6 +1,6 @@
 .hero {
   background-color: $veryLightGray;
-
+  
  .container {
   
   @include breakpoint-up(large) {
@@ -9,43 +9,44 @@
   }
  }
 
-  &__image {
+  &__image {  
     position: relative;
     background-image: url('/images/bg-intro-mobile.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 17.5rem;
+    min-height: 17.5rem;  
 
     @include breakpoint-up(medium) {
      min-height: 25rem;
-     background-position: center 60%;
+     background-position: center 70%;
     }
 
     @include breakpoint-up(large) {
       flex: 3;
       order: 2;
       height: 41rem;
-      background-image: url('/images/bg-intro-desktop.svg');
-      background-position: left center; 
+      background-image: none;
+      // background-image: url('/images/bg-intro-desktop.svg');
+      // background-position: left center; 
     }
 
-    &::before {
-
-      @include breakpoint-up(medium) {
-        background-size: 52%;
-      }
-
-     
-
+    &::before { 
+  
       @include breakpoint-up(large) {
+        content: "";
+        position: absolute;
+        height: 100%;
+        background-image: url('/images/bg-intro-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: center bottom;
         width: 150%;
-        background-size: 123%;
-        background-position: 0% 23%;
+        background-size: 122%;
+        background-position: 0% 83%;
       }
     }
 
-    &::after {
+    &::after { 
       content: "";
       position: absolute;
       height: 100%;
@@ -55,7 +56,7 @@
       background-repeat: no-repeat;
       background-position: center bottom;
 
-      @include breakpoint-up(medium) {
+      @include breakpoint-up(medium) { 
         background-size: 52%;
       }
 
@@ -63,7 +64,6 @@
         width: 120%;
         height: 122%;
         background-size: 94%;
-        background-repeat: no-repeat;
         background-position: center 150%;
         left: 22%;
       }

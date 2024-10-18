@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 1;  
 
   // Hamburger Open Styles
   &.open {
@@ -26,7 +28,6 @@
     bottom: 0px;
     left: 0px;
     background-image: linear-gradient($darkBlue, transparent);
-    z-index: 1;
   }
 
   nav {
@@ -34,7 +35,6 @@
     background-color: $white;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
-    z-index: 2;
   }
 
   &__logo {
@@ -70,12 +70,11 @@
     background: $white;
     padding: 1.625rem;
     border-radius: 5px;
-    z-index: 2;
     
     a {
       display: block;
-      color: $darkBlue;
       padding: 0.625rem;
+      color: $darkBlue;
       text-align: center;
     }
   }
@@ -108,7 +107,7 @@
         color: $darkBlue;
 
         &::before {
-          opacity: 100%;
+          opacity: 1;
         }
       }
     }
